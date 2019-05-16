@@ -1,0 +1,328 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>AlphaPay24</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="shortcut icon" href="/favicon.ico">
+
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+    <link rel="stylesheet" href="/css/main.css">
+</head>
+<body>
+    <header>
+    
+        <div class="main-content clearfix">
+    
+            <a href="./index.html" class="logo hovered"></a>
+    
+            <div class="main-menu">
+                <a href="./index.html" class="main-menu__item active">Главная</a>
+                <a href="./faq.html" class="main-menu__item">FAQ</a>
+                <a href="./rules.html" class="main-menu__item">Правила</a>
+                <a href="./contacts.html" class="main-menu__item">Контакты</a>
+            </div>
+    
+            <a href="./login.html" class="sign-in-btn">
+                <span>Вход</span>
+            </a>
+        </div>
+    
+    </header>
+    
+    <div class="menu-line">
+        <div class="main-content">
+    
+            <h1 class="menu-line__header">Обмен валют</h1>
+    
+            <div class="menu-line__operator-status">
+                <div class="time">19:29:26 МСК <span class="status">Оператор доступен</span></div>
+                <div class="info">Мы обрабатываем заявки с 06:00 до 21:00 по МСК</div>
+            </div>
+    
+        </div>
+    </div>
+
+    <main>
+
+        <div class="main-content">
+
+            <div class="exchange">
+
+                <div class="exchange__left exchange-list shadow-box js-from">
+                    <div class="exchange__header">Отправляете</div>
+
+                    <div class="exchange-list__item"><div class="name c1">Яндекс-деньги</div></div>
+                    <div class="exchange-list__item"><div class="name c2">Bitcoin</div></div>
+                    <div class="exchange-list__item"><div class="name c3">Сбербанк (ОАО)</div></div>
+                    <div class="exchange-list__item"><div class="name c4">РайффайзенБанк </div></div>
+                    <div class="exchange-list__item"><div class="name c5">РосБанк</div></div>
+                    <div class="exchange-list__item"><div class="name c6">WebMoney</div></div>
+                </div>
+
+                <form class="exchange__center shadow-box js-form" style="display: none;">
+                    <div class="exchange__header">
+
+                        <div class="course">
+                            <span class="course__caption">КУРС:</span>
+                            <span class="course__value">1BTC = 19.2974 PMA</span>
+                        </div>
+
+                        <div class="icons">
+                            <div class="icons__from icon b1"></div>
+                            <div class="arr-direction"></div>
+                            <div class="icons__to icon b2"></div>
+                        </div>
+
+                        <div class="inputs">
+                            <label for="">Отправляете</label>
+                            <input type="text" value="0.01" class="from">
+
+                            <label class="to">Получаете</label>
+                            <input type="text" value="10.23456789" class="to">
+
+                            <div class="change-btn"></div>
+                        </div>
+
+                    </div>
+
+                    <div class="exchange__form">
+                        <div class="row">
+                            <div class="input-field col s12">
+                                <input id="email" type="email" class="validate">
+                                <label for="email">Ваш e-mail</label>
+                            </div>
+
+                            <div class="input-field col s12">
+                                <input placeholder="1BUu8GFQA7ikuod3XsMrxfEEeReqzyeojL" id="first_name" type="text" class="validate">
+                                <label for="first_name">Кошелек для получения</label>
+                            </div>
+
+                            <div class="confirm-rules">
+                                <input type="checkbox" class="filled-in" id="filled-in-box" checked="checked" />
+                                <label for="filled-in-box">
+                                    Я согласен с <a href="#">правилами соглашения</a>
+                                </label>
+                            </div>
+
+                            <div class="btn-wrapper">
+                                <button class="submit-btn">НАЧАТЬ ОБМЕН</button>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+
+                <div class="exchange__center exchange__info shadow-box js-info">
+                    <div class="prompt">Добро пожаловать на ALPHAPAY<span class="sign">24</span>!</div>
+                    <div class="prompt2">Выберите направление обмена слева и справа.</div>
+
+                    <div class="text">
+                        <p>Сервис помогает продать или купить биткоин с гарантией получения средств. Все операции выполняются в полуавтоматическом режиме, быстро и надежно.</p>
+                        <p>Обменник обеспечивает сохранность ваших данных при всех обменах.</p>
+                        <p>Обменник позволяет обменять Bitcoin, BTC-e, Яндекс Деньги, Qiwi, Perfect Money, Visa, e-Voucher, Сбербанк, Авангард банк, Русский Стандарт, ВТБ24, Альфа Банк, Газпромбанк, Тинькофф банк.</p>
+                    </div>
+                </div>
+
+                <div class="exchange__right exchange-list shadow-box js-to">
+                    <div class="exchange__header">
+                        <div class="caption1">Получаете</div>
+                        <div class="caption2">Резерв</div>
+                    </div>
+
+                    <div class="exchange-list__item">
+                        <div class="name c1">Яндекс-деньги</div>
+                        <div class="reserves">103 100 <span class="currency">RUB</span></div>
+                    </div>
+                    <div class="exchange-list__item">
+                        <div class="name c2">Bitcoin</div>
+                        <div class="reserves">1.23234440 <span class="currency">BTC</span></div>
+                    </div>
+                    <div class="exchange-list__item">
+                        <div class="name c3">Сбербанк (ОАО)</div>
+                        <div class="reserves">20 006 <span class="currency">RUB</span></div>
+                    </div>
+                    <div class="exchange-list__item">
+                        <div class="name c4">РайффайзенБанк </div>
+                        <div class="reserves">35 903 <span class="currency">RUB</span></div>
+                    </div>
+                    <div class="exchange-list__item">
+                        <div class="name c5">РосБанк</div>
+                        <div class="reserves">91 079 <span class="currency">RUB</span></div>
+                    </div>
+                    <div class="exchange-list__item">
+                        <div class="name c6">WebMoney</div>
+                        <div class="reserves">1 900 <span class="currency">WMZ</span></div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="main-info">
+                <div class="main-info__header">Удобный обмен</div>
+                <div class="prompt">Пожалуйста, перед тем как начать обмен ознакомьтесь с пошаговой инструкцией</div>
+                <div class="li">1. Выберите из таблицы направление обмена.</div>
+                <div class="li">2. В появившейся форме ввдеите сумму обмена, ваш e-mail адрес, номера счетов и подтвердите согласие с правилами обмена.</div>
+                <div class="li">3. Оплатите заявку. Платеж необходимо совершить в течение 15-ти минут. После оплаты заявки кликните «Я ОПЛАТИЛ».</div>
+                <div class="li">4. Заявка принята и будет обработана в течение 30 минут с момента поступления средств (для ВТС после 3х подтверждений сети).</div>
+            </div>
+
+        </div>
+
+        <div class="reviews">
+
+            <div class="main-content">
+
+                <div class="reviews__header">
+                    <div class="text">Отзывы</div>
+                </div>
+
+                <div class="js-slider">
+                    <div class="reviews__item">
+                        <div class="item-info">
+                            <div class="name">Василий</div>
+                            <div class="date">19.09.2017 18:32</div>
+                        </div>
+                        <div class="item-text">Удобный, понятный обменник. Перевел биткоин в считанные минуты. Легко и быстро.</div>
+                    </div>
+                    <div class="reviews__item">
+                        <div class="item-info">
+                            <div class="name">Василий</div>
+                            <div class="date">19.09.2017 18:32</div>
+                        </div>
+                        <div class="item-text">Удобный, понятный обменник. Перевел биткоин в считанные минуты. Легко и быстро.</div>
+                    </div>
+                    <div class="reviews__item">
+                        <div class="item-info">
+                            <div class="name">Василий</div>
+                            <div class="date">19.09.2017 18:32</div>
+                        </div>
+                        <div class="item-text">Удобный, понятный обменник. Перевел биткоин в считанные минуты. Легко и быстро.</div>
+                    </div>
+                </div>
+
+                <div class="reviews__buttons">
+                    <div class="btn-write hovered">Написать отзыв</div>
+                    <div class="btn-all hovered">Все Отзывы</div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="main-content">
+
+            <div class="trust">
+                <div class="trust__header">Нам доверяют</div>
+
+                <div class="clearfix">
+                    <div class="trust__col col1 shadow-box">
+                        <div class="icon"></div>
+                        <div class="trust__caption">Сумма обменов</div>
+
+                        <div class="trust__counter">
+                            <div class="trust__counter-item">1</div>
+                            <div class="trust__counter-item">1</div>
+                            <div class="trust__counter-item">1</div>
+                            <div class="trust__counter-item">1</div>
+                            <div class="trust__counter-item">1</div>
+                            <div class="trust__counter-item">1</div>
+                            <div class="trust__counter-item">1</div>
+                            <div class="trust__counter-item">1</div>
+                        </div>
+
+                        <div class="counter-sign">$</div>
+                    </div>
+
+                    <div class="trust__col col2 shadow-box">
+                        <div class="icon"></div>
+                        <div class="trust__caption">Количество обменов</div>
+
+                        <div class="trust__counter">
+                            <div class="trust__counter-item">0</div>
+                            <div class="trust__counter-item">0</div>
+                            <div class="trust__counter-item">0</div>
+                            <div class="trust__counter-item">5</div>
+                            <div class="trust__counter-item">7</div>
+                            <div class="trust__counter-item">3</div>
+                            <div class="trust__counter-item">8</div>
+                            <div class="trust__counter-item">9</div>
+                            <div class="trust__counter-item">1</div>
+                        </div>
+                    </div>
+
+                    <div class="trust__col col3 shadow-box">
+                        <div class="icon"></div>
+                        <div class="trust__caption">Наших клиентов</div>
+
+                        <div class="trust__counter">
+                            <div class="trust__counter-item">0</div>
+                            <div class="trust__counter-item">0</div>
+                            <div class="trust__counter-item">0</div>
+                            <div class="trust__counter-item">0</div>
+                            <div class="trust__counter-item">5</div>
+                            <div class="trust__counter-item">3</div>
+                            <div class="trust__counter-item">8</div>
+                            <div class="trust__counter-item">6</div>
+                            <div class="trust__counter-item">0</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </main>
+
+    <footer>
+        <div class="main-content">
+    
+            <div class="footer">
+                <div class="col1">
+                    <div class="logo"></div>
+    
+                    <div class="info">
+                        <span class="name">AlphaPay24.com</span> - это низкие цены, быстрый обмен и вежливая поддержка. У нас всегда сможете осуществить выгодный обмен электронных валют по лучшим условиям на рынке.
+                    </div>
+    
+                    <div class="mail">
+                        e-mail: <a href="mailto:alphapay24@gmail.com" class="link">alphapay24@gmail.com</a>
+                    </div>
+                </div>
+    
+                <div class="col2">
+                    <div class="footer__header">
+                        Навигация
+                    </div>
+    
+                    <div class="footer__menu">
+                        <a href="./" class="footer__menu-item">Главная</a>
+                        <a href="./lk.html" class="footer__menu-item">Личный кабинет</a>
+                        <a href="./reviews.html" class="footer__menu-item">Отзывы</a>
+                        <a href="./rules.html" class="footer__menu-item">Правила обмена</a>
+                        <a href="./contacts.html" class="footer__menu-item">Контакты</a>
+                    </div>
+                </div>
+    
+                <div class="col3">
+                    <div class="footer__header">
+                        Наши партнеры
+                    </div>
+    
+                    <div class="footer__partners">
+                        <img src="../images/partners_all.png" alt="partners">
+                    </div>
+                </div>
+            </div>
+    
+        </div>
+    
+        <div class="footer-line">2016 - 2017 AlphaPay24</div>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+    <script type="text/javascript" src="/js/main.js"></script>
+</body>
+</html>

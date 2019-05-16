@@ -1,0 +1,24 @@
+{
+  "name": "template",
+  "version": "1.0.0",
+  "authors": [
+    "hello.profaller@gmail.com"
+  ],
+  "description": "template html markup",
+  "keywords": [
+    "html",
+    "js",
+    "css"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "materialize": "*"
+  }
+}

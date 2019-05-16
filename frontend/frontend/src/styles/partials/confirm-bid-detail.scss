@@ -1,0 +1,197 @@
+.ex-pay-global-scope {
+
+}
+
+.paylead-global-scope {
+
+}
+
+
+
+
+.bid-info {
+
+  &__head {
+    color: #424a56;
+    font-size: 24px;
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+
+  &__alert {
+    position: relative;
+    padding: 15px;
+    background-color: rgba(61, 156, 237, 0.2);
+    border-radius: 4px;
+    margin-bottom: 19px;
+
+    color: #39455b;
+    font-size: 17px;
+    font-weight: 500;
+
+    &-close {
+      display: block;
+      position: absolute;
+      right: 8px;
+      top: 8px;
+      cursor: pointer;
+
+      @include sprite($close-alert);
+    }
+  }
+
+  &__status {
+    color: #424a56;
+    font-size: 21px;
+    margin-bottom: 23px;
+
+    span {
+      font-weight: 500;
+      text-transform: uppercase;
+    }
+
+  }
+
+  .in-work {
+    .status {
+      color: #4a90e2;
+    }
+  }
+
+  .wait {
+    .status {
+      color: #f5a523;
+    }
+  }
+
+  .complete {
+    .status {
+      color: #46c6a0;
+    }
+  }
+
+  .decline {
+    .status {
+      color: #df5c6c;
+    }
+  }
+
+  .hr-line {
+    position: relative;
+    height: 1px;
+    width: 446px;
+    background-color: rgba(34, 49, 67, 0.15);
+    left: -17px;
+  }
+
+  &__req {
+    float: left;
+    width: 447px;
+    border-radius: 4px;
+    border: 1px solid rgba(34, 49, 67, 0.15);
+    background-color: #ffffff;
+
+    padding: 20px 17px 0 20px;
+
+    &-caption {
+      height: 25px;
+      color: $confirm-color;
+      font-size: 21px;
+      font-weight: 500;
+      margin-bottom: 8px;
+    }
+
+    .currency {
+      height: 30px;
+      position: relative;
+      margin-bottom: 21px;
+
+      color: #1d1f23;
+      font-size: 24px;
+      font-weight: 500;
+      text-transform: uppercase;
+      overflow: hidden;
+
+      .currency-icon {
+        float: left;
+        margin-right: 15px;
+      }
+    }
+
+    &-req {
+      padding: 24px 0;
+
+      .detail {
+        margin-bottom: 16px;
+      }
+
+      .detail-caption {
+        color: #b5bbc7;
+        font-size: 14px;
+        font-weight: 500;
+        margin-bottom: 3px;
+      }
+
+      .detail-value {
+        color: #1d1f23;
+        font-size: 16px;
+        font-weight: 400;
+      }
+    }
+  }
+
+  &__text {
+    float: right;
+    width: 447px;
+
+    color: #39455b;
+    font-size: 14px;
+    font-weight: 400;
+
+    .text-block {
+      margin-bottom: 15px;
+    }
+
+    .text-attention {
+      border-radius: 4px;
+      border: 1px solid rgba(66, 74, 86, 0.15);
+      padding: 16px 16px 16px 72px;
+      position: relative;
+
+      &:before {
+        content: ' ';
+        display: block;
+        position: absolute;
+
+        left: 17px;
+        top: 17px;
+
+        @include sprite($text-attention);
+      }
+    }
+  }
+
+  &__btn {
+    display: inline-block;
+    width: 100px;
+    height: 27px;
+    line-height: 24px;
+    text-align: center;
+    border-radius: 2px;
+    border: 2px solid $confirm-color;
+    cursor: pointer;
+
+    color: $confirm-color;
+    font-size: 11px;
+    font-weight: 500;
+  }
+}
+
+.currency-icon-md {
+  width: 30px;
+  height: 30px;
+}
+
+#alertBankModal .modal-content {
+  font-size: 20px;
+}

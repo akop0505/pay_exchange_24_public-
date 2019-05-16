@@ -1,0 +1,192 @@
+/*.content-wrapper, .right-side {
+    background-color: #fff;
+
+}*/
+
+:focus {
+    outline: none !important;
+}
+.rate-str-val {
+    font-weight: bold;
+}
+.rate-str-currency {
+    font-size: .9em;
+    color: #666;
+    font-style: italic;
+}
+
+.autobalance-grid {
+
+}
+.edit-field {
+    height: 32px;
+    cursor: pointer;
+    position: relative;
+}
+.edit-field:hover {
+    background: #eee;
+}
+.edit-field__aria {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+}
+.autobalance-grid table td {
+    line-height: 32px !important;
+}
+.edit-field .view-aria {
+    line-height: 32px;
+    padding-left: 5px;
+}
+.edit-field .edit-aria {
+    padding: 3px;
+}
+.edit-field .edit-aria input {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+
+.trans-formula-item {
+    display: inline-block;
+}
+.trans-widget .edit-aria {
+    width: 50px;
+}
+.trans-widget .view-aria {
+    padding: 0;
+}
+
+
+
+.autobalance-grid table td.bg-success {
+    background: #5cb85c;
+}
+.autobalance-grid table td.bg-warning {
+    background: #f0ad4e;
+}
+.autobalance-grid table td.bg-danger {
+    background: #d9534f;
+}
+
+
+.requests-grid .table td {
+    border: none !important;
+    border-top: 1px solid #ddd !important;
+}
+.requests-grid .process-time-cell {
+    max-width: 92px;
+}
+.requests-grid .comment-cell {
+    max-width: 270px;
+}
+.requests-grid .from-cell {
+    #min-width: 374px;
+}
+.requests-grid .to-cell {
+    #min-width: 390px;
+}
+.requests-grid .action-cell {
+    width: 90px;
+}
+.requests-grid .action-btn {
+    width: 80px;
+}
+
+.paid-from-cell {}
+
+.paid-from-cell .item {
+    margin-bottom: 0;
+}
+
+.paid-from-cell .item .caption {
+    text-decoration: underline;
+    width: 88px;
+    display: inline-block;
+    margin-right: 10px;
+    font-size: .9em;
+}
+.paid-from-cell .item .value {
+    font-weight: bold;
+}
+.paid-from-cell .item .value.wait {
+    color: #e36b2c;
+}
+.paid-from-cell .item .value.red {
+    color: red;
+}
+.paid-from-cell .item .value.green {
+    color: green;
+}
+
+.fixed-header-page .main-header {
+    position: fixed;
+    width: 100%;
+}
+.navbar-static-top {
+    position: relative;
+}
+
+.header-rates {
+    color: #fff;
+    font-weight: bold;
+    margin-left: -65px;
+    padding-top: 4px;
+    position: absolute;
+    left: 50%;
+}
+.accounting-grid .table-bordered>tbody>tr>td {
+    border: 1px solid #ccc;
+}
+.accounting-grid {
+    overflow: scroll;
+}
+.accounting-grid .wallet-info {
+    white-space: nowrap;
+}
+.accounting-grid .wallet-summary {
+    text-align: center;
+    vertical-align: middle;
+}
+.accounting-grid__id {
+    font-size: .85em;
+    font-weight: bold;
+}
+.accounting-grid__comment {
+    font-size: .85em;
+}
+.accounting-grid__remove-btn {
+    padding: 1px 5px;
+    font-size: 10px;
+    line-height: 1.5;
+}
+
+.panel-tabs {
+    border-top: none;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+}
+
+.form-loader__image {
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -32px;
+    margin-top: -32px;
+}
+
+.select2-container--default .select2-selection--single .select2-selection__rendered {
+    line-height: 23px !important;
+}
+
+
+
+
+
+
+
+
+
+

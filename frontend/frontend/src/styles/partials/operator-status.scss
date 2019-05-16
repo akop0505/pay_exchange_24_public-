@@ -1,0 +1,75 @@
+.operator-status {
+
+
+  &__line {
+    height: 36px;
+    line-height: 36px;
+    margin-bottom: 8px;
+    overflow: hidden;
+  }
+
+  &__status {
+    float: left;
+    position: relative;
+    height: 36px;
+    line-height: 36px;
+    border-radius: 4px;
+    background-color: #46c6a0;
+    color: #ffffff;
+    font-size: 15px;
+    font-weight: 700;
+    padding: 0 16px 0 44px;
+
+    .operator-status-offline & {
+      background-color: #e6507b;
+      padding-left: 34px;
+    }
+
+    &:before {
+      content: ' ';
+      display: block;
+      position: absolute;
+      left: 16px;
+      top: 8px;
+
+      @include sprite($op-online);
+
+      .operator-status-offline & {
+        left: 4px;
+        top: 3px;
+
+        @include sprite($operator-decline);
+      }
+    }
+  }
+
+  &__time {
+    float: right;
+    color: #1d1f23;
+    font-size: 19px;
+    font-weight: 500;
+  }
+
+  &__info {
+    color: #b5bbc7;
+    font-size: 14px;
+    font-weight: 400;
+  }
+
+
+
+
+  &---offline {
+    .status {
+      color: #e6507b;
+    }
+
+    .info {
+      color: rgba(66, 74, 86, 0.5);
+    }
+
+    &:before {
+      @include sprite($operator-decline)
+    }
+  }
+}

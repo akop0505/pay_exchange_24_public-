@@ -1,0 +1,49 @@
+html {
+  background: #fff;
+  font-size: 14px;
+  line-height: 1.4;
+}
+
+html, body, main {
+  height: 100%;
+  background: #fff;
+}
+
+body {
+  min-width: 920px;
+  font-family: Roboto;
+}
+
+main {
+  height: auto;
+  min-height: 100%;
+  padding-bottom: 77px;
+  position: relative;
+}
+
+footer {
+  margin-top: -77px;
+}
+
+.main-content {
+  width: 920px;
+  margin: auto;
+  position: relative;
+
+  &.boxed {
+    padding: 32px 0;
+  }
+}
+
+.shadow-box {
+  box-shadow: 0 15px 40px rgba(181, 187, 199, 0.49);
+  background-color: #ffffff;
+}
+
+.hovered {
+  @include transition(opacity, .5s, easy-in);
+
+  &:hover {
+    opacity: .8;
+  }
+}

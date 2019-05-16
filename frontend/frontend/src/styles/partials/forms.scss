@@ -1,0 +1,295 @@
+.login {
+  .forgot-link {
+    position: absolute;
+
+    top: 8px;
+    right: 32px;
+  }
+
+  .password-input {
+    padding-right: 170px !important;
+  }
+
+  .reg-link {
+    position: absolute;
+    left: 0;
+    top: 12px;
+  }
+}
+
+.registration {
+  .btn {
+    padding: 0 20px !important;
+  }
+
+  .captcha {
+    position: absolute;
+    left: 0;
+    top: 21px;
+
+    &.error {
+      //border: 1px solid #e6507b;
+    }
+  }
+
+  .form__buttons {
+    height: 73px;
+  }
+}
+
+.form {
+  width: 540px;
+  position: relative;
+
+
+  &__caption {
+    color: #424a56;
+    font-size: 24px;
+    font-weight: 500;
+    letter-spacing: 1.09px;
+
+    margin-bottom: 16px;
+    padding-right: 100px;
+
+    line-height: 24px;
+  }
+
+  &__inputs {
+    border-radius: 4px;
+    border: 1px solid #b5bbc6;
+  }
+
+  .input-field {
+    padding: 0;
+    margin-top: 14px !important;
+
+    label {
+      left: 0;
+    }
+
+    &:last-child {
+      input {
+        border: none !important;
+      }
+    }
+  }
+
+  label {
+    left: 32px !important;
+    top: -4px !important;
+
+    color: #b5bbc7;
+    font-size: 16px !important;
+    font-weight: 400;
+    letter-spacing: 0.73px;
+
+    &.active {
+      font-size: 12px !important;
+      transform: translateY(5px) scale(.8) !important;
+    }
+  }
+
+  input {
+    height: 50px !important;
+    box-sizing: border-box !important;
+
+    padding-left: 32px !important;
+    margin-bottom: 0 !important;
+
+    color: #424a56 !important;
+    font-size: 16px !important;
+    font-weight: 400 !important;
+    letter-spacing: 0.73px;
+
+    &:focus {
+      box-shadow: none !important;
+      border-bottom-color: #b5bbc6 !important;
+    }
+  }
+
+  &__link {
+    color: #46c6a0;
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 0.64px;
+
+    display: inline-block;
+
+    border-bottom: 1px solid #46c6a0;
+
+    &:hover {
+      border-color: transparent;
+    }
+  }
+
+  &__buttons {
+    padding-top: 24px;
+    position: relative;
+    height: 44px;
+
+    box-sizing: content-box;
+  }
+
+  .btn {
+    position: absolute;
+    top: 24px;
+    right: 0;
+
+    height: 44px;
+    box-shadow: 0 7px 12px rgba(14, 147, 108, 0.17);
+    border-radius: 100px;
+    padding: 0 82px;
+
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: 0.82px;
+
+    text-transform: none;
+  }
+
+  &.error {
+
+    .form__inputs {
+      border: 1px solid #e64f7b;
+    }
+
+    textarea,
+    input {
+      border-color: #e64f7b;
+
+      &:focus {
+        border-color: #e64f7b !important;
+      }
+    }
+
+    label.active {
+      color: #e64f7b !important;
+    }
+  }
+
+  &__errors {
+    position: relative;
+    padding-left: 22px;
+    padding-top: 1px;
+    line-height: 17px;
+    margin-bottom: 12px;
+
+    color: #e6507b;
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 0.64px;
+
+    &:before {
+      content: ' ';
+      display: block;
+      position: absolute;
+
+      left: 0;
+      top: 0;
+
+      @include sprite($form-error);
+    }
+  }
+
+  &.attention {
+
+    .form__inputs {
+      border: 1px solid #46c6a0;
+
+      input {
+        border-color: #46c6a0;
+
+        &:focus {
+          border-color: #46c6a0 !important;
+        }
+      }
+
+      label {
+        color: #46c6a0 !important;
+      }
+    }
+  }
+
+  &__attention {
+    position: relative;
+    padding-left: 40px;
+    height: 28px;
+    line-height: 28px;
+    margin-bottom: 12px;
+
+    color: #46c6a0;
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 0.64px;
+
+    &:before {
+      content: ' ';
+      display: block;
+      position: absolute;
+
+      left: 0;
+      top: 0;
+
+      @include sprite($form-attention);
+    }
+  }
+}
+
+
+.simple-form {
+  input,
+  textarea {
+    color: #424a56!important;
+    font-size: 16px!important;
+    font-weight: 400!important;
+    letter-spacing: .73px;
+  }
+
+  input {
+    display: inline-block;
+    width: 100%;
+    height: 54px;
+    line-height: 54px;
+    padding: 0 32px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+
+    &:focus {
+      outline: none !important;
+    }
+  }
+
+  textarea {
+    display: inline-block;
+    width: 100%;
+    min-height: 154px;
+    resize: none;
+    padding: 19px 32px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+
+    &:focus {
+      outline: none !important;
+    }
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

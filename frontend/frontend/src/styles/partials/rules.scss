@@ -1,0 +1,40 @@
+.rules {
+  width: 780px;
+  padding: 32px 0;
+
+  ul {
+    list-style-type: disc !important;
+
+    li {
+      list-style-type: disc !important;
+      margin-bottom: 5px;
+    }
+  }
+
+  &__item {
+    padding: 0 40px 25px 21px;
+    border-bottom: 1px dashed #b5bbc6;
+    margin-bottom: 22px;
+
+    &-header {
+      color: #46c6a0;
+      font-size: 16px;
+      font-weight: 700;
+      letter-spacing: 0.73px;
+
+      margin: 0 0 8px -21px;
+    }
+
+    &-text {
+      color: #424a56;
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 18px;
+      letter-spacing: 0.64px;
+
+      p:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+}

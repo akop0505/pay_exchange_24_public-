@@ -1,0 +1,57 @@
+footer {
+  height: 77px;
+  background-color: #424a56;
+  position: relative;
+
+  .footer {
+    position: relative;
+    height: 100%;
+
+
+    &__menu {
+      height: 77px;
+      line-height: 77px;
+
+      &-item {
+        float: left;
+        text-decoration: none;
+        color: #ffffff;
+        font-size: 14px;
+        font-weight: 400;
+
+        padding-left: 11px;
+        margin-right: 24px;
+        position: relative;
+
+        transition: .5s;
+
+        &:before {
+          content: ' ';
+          display: block;
+          position: absolute;
+          left: 0;
+          top: 35px;
+
+          @include sprite($menu-arr)
+        }
+
+        &:hover {
+          opacity: .7;
+        }
+      }
+    }
+
+    &__copyrights {
+      position: absolute;
+      right: 0;
+      top: 0;
+      height: 77px;
+      line-height: 81px;
+
+      color: rgba(255, 255, 255, 0.5);
+      font-size: 13px;
+      font-weight: 400;
+    }
+
+  }
+}

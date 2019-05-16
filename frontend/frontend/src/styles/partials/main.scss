@@ -1,0 +1,280 @@
+.main-info {
+  position: relative;
+  width: 920px;
+  border-radius: 4px;
+  background-color: #f3f4f6;
+  padding: 24px 24px 24px 133px;
+  color: #3f3f3f;
+  margin-bottom: 44px;
+
+  &:before {
+    content: ' ';
+    display: block;
+    position: absolute;
+    top: 24px;
+    left: 40px;
+
+    @include sprite($icon-info)
+  }
+
+  &__header {
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+
+    margin-bottom: 12px;
+  }
+
+  .prompt {
+    font-size: 12px;
+    font-weight: 500;
+    margin-bottom: 8px;
+  }
+
+  .li {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 16px;
+  }
+
+  .close-btn {
+    position: absolute;
+
+    top: 16px;
+    right: 16px;
+
+    cursor: pointer;
+
+    @include sprite($close-btn);
+  }
+}
+
+.front-page {
+  padding-bottom: 60px;
+
+  &__header {
+    color: #46c6a0;
+    font-size: 32px;
+    font-weight: 500;
+    text-align: center;
+  }
+
+  &__about {
+    padding-top: 37px;
+    margin-bottom: 60px;
+  }
+
+  &__box {
+    position: relative;
+    width: 448px;
+    height: 277px;
+    background-color: rgba(243, 244, 246, 0.3);
+    border: 1px solid #eaedf2;
+
+    &-header {
+      position: relative;
+      height: 60px;
+      line-height: 60px;
+      padding: 0 16px 0 24px;
+      background: #fff;
+      border-bottom: 1px solid #eaedf2;
+
+      color: #424a56;
+      font-size: 21px;
+      font-weight: 500;
+    }
+
+    &-body {
+
+      .reviews & {
+        height: 147px;
+        overflow: hidden;
+      }
+
+      .stat & {
+        height: 215px;
+        overflow: hidden;
+      }
+    }
+
+    &-footer {
+      position: relative;
+      height: 68px;
+      background: #fff;
+      border-top: 1px solid #eaedf2;
+    }
+  }
+}
+
+.reviews {
+  float: left;
+
+  &__item {
+    height: 147px;
+    padding: 18px 24px;
+
+    &__info {
+      height: 19px;
+      line-height: 19px;
+      margin-bottom: 10px;
+
+      &-name {
+        display: inline-block;
+        color: #46c6a0;
+        font-size: 16px;
+        font-weight: 700;
+        margin-right: 24px;
+      }
+
+      &-date {
+        display: inline-block;
+        color: rgba(73, 88, 83, 0.45);
+        font-family: "Kohinoor Telugu";
+        font-size: 16px;
+        font-weight: 400;
+      }
+    }
+
+    &__text {
+      color: #495853;
+      font-size: 16px;
+      font-weight: 400;
+    }
+
+  }
+
+  &__button {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    width: 155px;
+    height: 36px;
+    line-height: 34px;
+    border-radius: 4px;
+    border: 1px solid #46c6a0;
+    cursor: pointer;
+
+    color: #46c6a0;
+    font-size: 14px;
+    font-weight: 500;
+    text-align: center;
+  }
+}
+
+.stat {
+  float: right;
+
+  &__item {
+    height: 215px;
+    background-color: rgba(243, 244, 246, 0.3);
+  }
+
+  &__caption {
+    padding-top: 55px;
+    text-align: center;
+    color: #1d1f23;
+    font-size: 18px;
+    font-weight: 700;
+
+    span {
+      color: #46c6a0;
+    }
+  }
+
+  &__counter {
+    text-align: center;
+    color: #46c6a0;
+    font-size: 64px;
+    font-weight: 400;
+    line-height: 1.2;
+  }
+}
+
+.partners {
+  position: relative;
+  width: 920px;
+  height: 100px;
+  margin: 15px auto 0;
+  overflow: hidden;
+
+  &:before {
+    content: ' ';
+    display: block;
+    position: absolute;
+    width: 5%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    z-index: 1000;
+
+    background-image: linear-gradient(90deg, #ffffff 0%, rgba(255, 255, 255, 0) 100%);
+  }
+  &:after {
+    content: ' ';
+    display: block;
+    position: absolute;
+    width: 5%;
+    height: 100%;
+    right: 0;
+    top: 0;
+    z-index: 1000;
+
+    background-image: linear-gradient(270deg, #ffffff 0%, rgba(255, 255, 255, 0) 100%);
+  }
+
+  &__wrapper {
+    background-color: #f9fafb;
+    height: 100px;
+    white-space: nowrap;
+    letter-spacing: 0;
+  }
+
+  &___bg {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    //background-image: linear-gradient(270deg, #ffffff 0%, rgba(255, 255, 255, 0) 5%, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0) 95%, #ffffff 100%);
+  }
+
+  &__item {
+    text-decoration: none;
+    display: inline-block;
+    width: 122px;
+    height: 100px;
+    line-height: 100px;
+    text-align: center;
+
+    img {
+      display: inline-block;
+      vertical-align: middle;
+    }
+  }
+}
+
+
+.ajax-loader {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -32px;
+  margin-left: -32px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
