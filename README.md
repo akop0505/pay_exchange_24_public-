@@ -1,4 +1,4 @@
-# installation instructions
+# Project installation instructions
 #### Prerequisites
 - you need installed web-server, mysql-server and php7.1
 
@@ -20,7 +20,7 @@
 
 1. run ```php yii migrate --migrationPath=@yii/rbac/migrations``` to init rbac db tables
 
-1. restore dump, placed in ... to your project db (!!!)
+1. restore dump, placed in ... to your project db
 
 1. run ```php yii migrate``` to init whole project db
 
@@ -35,8 +35,8 @@
 
 1. navigate to ```<project_root>/frontend/frontend```
 
-1. run ```npm i```
+1. run ```npm install```
 
-1. run ```bower i```
+1. run ```bower install```
 
 1. to build and watch frontend components run ```gulp default```
